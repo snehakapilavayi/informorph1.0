@@ -1,0 +1,11 @@
+InfoMorph Gemini setup
+
+Set GEMINI_API_KEY as a private server-side environment secret in the hosting environment. Do not place the key in frontend code or commit it to Git. Restart or redeploy after adding the secret.
+
+The app uses Gemini for text, speech and video. Model access, billing and quotas depend on your Google account. Optional existing INFOMORPH_MODEL, INFOMORPH_TTS_MODEL and INFOMORPH_VIDEO_MODEL server settings can override defaults; use Gemini-compatible model names.
+
+The previous key shared in chat should be revoked. Create a replacement in Google AI Studio and enter it directly into the server secret manager. The downloaded source archive does not contain that key.
+
+The generated copy and storyboard fields are cleaned to remove em dashes, en dashes and Markdown bold markers. Source quotations are preserved exactly for verification.
+
+Live requests could not be tested from this environment. Test text generation, audio, video, PDF upload and saved projects in the configured deployment.
