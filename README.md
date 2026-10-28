@@ -145,3 +145,4 @@ Verified means checked against supplied source text. It does not prove source au
 Credentials
 
 Use private server environment secrets for Gemini. Never put private keys in VITE_ variables or commit real .env files. Public Supabase configuration is separate from private service credentials.
+The link for accessing the actual web page is https://informorph10.vercel.app/
